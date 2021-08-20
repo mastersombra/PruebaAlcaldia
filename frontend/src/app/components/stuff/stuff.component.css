@@ -1,0 +1,21 @@
+.circulo {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+    border-color: black;
+    border-style: solid;
+	background: rgb(255, 255, 255);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+  margin:0px auto;
+  padding:3%
+}
+
+.circulo > h2 {
+	font-family: sans-serif;
+	color: rgb(0, 0, 0);
+	font-size: 1.4rem;
+	font-weight: bold;
+}

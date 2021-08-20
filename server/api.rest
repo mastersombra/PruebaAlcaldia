@@ -1,0 +1,48 @@
+### Varias
+GET http://localhost:6006/api/stuffs/
+
+### Solo una by ID
+GET http://localhost:6006/api/stuffs/id/3
+
+### Solo una by name
+GET http://localhost:6006/api/stuffs/name/prueba2
+
+### Ingresar telas
+POST http://localhost:6006/api/stuffs/
+Content-Type: application/json
+
+{
+    "id": "2",
+    "name": "prueba2",
+    "state": "New",
+    "quantity": "2"
+}
+
+### Actualizar
+PUT http://localhost:6006/api/stuffs/3
+Content-Type: application/json
+
+{
+    "state": "Old",
+    "quantity": "3000"
+}
+
+### Eliminar
+DELETE http://localhost:6006/api/stuffs/
+
+
+
+### Varios movimientos
+GET http://localhost:6006/api/stuffs/movements/1
+
+### Ingresar Movimiento
+POST http://localhost:6006/api/stuffs/movements
+Content-Type: application/json
+
+{
+    "id": "4",
+    "idStuff": "1",
+    "type": "-",
+    "description": "Venta al por mayor",
+    "quantity": "50"
+}
